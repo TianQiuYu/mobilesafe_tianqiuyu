@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        style="@style/TitleStyle"
+        android:text="添加联系人到黑名单"
+        android:background="#fcc"/>
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入号码"
+        />
+    <RadioGroup
+        android:id="@+id/rg_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+    	<RadioButton 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/rb_all"
+	        android:text="拦截所有"/>
+    	<RadioButton 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/rb_phone"
+	        android:text="拦截电话"/>
+    	<RadioButton 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/rb_sms"
+	        android:text="拦截短信"/>
+    </RadioGroup>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+    	<Button 
+    	    android:id="@+id/bt_submit"
+    	    android:text="确定"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"/>
+    	<Button 
+    	    android:id="@+id/bt_cancel"
+    	    android:text="取消"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"/>
+	    
+	</LinearLayout>
+</LinearLayout>

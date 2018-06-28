@@ -1,0 +1,73 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--
+         <TextView
+        android:text="功能列表"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:padding="6dp"
+        android:background="#0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    -->
+    <style name="TitleStyle">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">#0f0</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- android:id="@+id/bt_next_page2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button"
+            android:text="下一页" -->
+    <style name="NextButStyle">
+         <item name="android:text">下一页</item>
+        <item name="android:onClick">nextPage</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:drawableRight">@drawable/next</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        
+    </style>
+    
+    <style name="ProButStyle">
+         <item name="android:text">上一页</item>
+        <item name="android:onClick">ProPage</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:drawableLeft">@drawable/previous</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        
+    </style>
+
+</resources>
